@@ -6,7 +6,7 @@ import Color from "./modules/color.js";
 
 const formElement = document.querySelector("form");
 const inputElement = document.querySelector("input");
-const color = new Color();
+const color = new Color(5, 32, 50);
 formElement.addEventListener("submit", (event) => {
   event.preventDefault();
   const entry = inputElement.value;

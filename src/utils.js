@@ -10,6 +10,6 @@ export function generatePalette(colorhex) {
   return tabColor;
 }
 
-export function generateHexa(colorhsl) {
-  return convert.hsl.hex(colorhsl);
+export function generateHexadecimalColor(colorEnHSL) {
+  return convert.hsl.hex(colorEnHSL);
 }
