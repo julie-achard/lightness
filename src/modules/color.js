@@ -9,7 +9,7 @@ class Color {
     this.#hsl = [h, s, l];
     //couleur en hexadecimal
     this.#hex = generateHexadecimalColor(this.#hsl);
-    this.#generateElement();
+    this.#element = this.#generateElement();
   }
 
   #generateElement() {
@@ -20,9 +20,7 @@ class Color {
     //Changement de la couleur du texte de l'élément
   }
 
-  display(element) {
-    element.insertAdjacentHTML("beforeend", this.#element);
-  }
+  display(element) {}
 }
 
 export default Color;
