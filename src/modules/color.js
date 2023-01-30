@@ -1,6 +1,7 @@
 import { generateHexadecimalColor } from "../utils";
-
+//5. Module Color.js
 class Color {
+  //Propriétés
   #hsl;
   #hex;
   #element;
@@ -11,7 +12,7 @@ class Color {
     this.#hex = generateHexadecimalColor(this.#hsl);
     this.#element = this.#generateElement();
   }
-
+  //Méthodes
   #generateElement() {
     //Changement de la couleur de fond de l'élément
     this.#element = `<div class="color" data-color="#${
