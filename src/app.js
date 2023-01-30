@@ -7,6 +7,7 @@ import Color from "./modules/color.js";
 const formElement = document.querySelector("form");
 const inputElement = document.querySelector("input");
 const headerElement = document.querySelector("header");
+const mainElement = document.querySelector("main");
 
 const color = new Color(5, 32, 50);
 //4. Gérer l'entrée de l'utilisateur
@@ -21,6 +22,9 @@ formElement.addEventListener("submit", (event) => {
   }
 });
 
+//8. Copier la couleur dans le presse-papier
+mainElement.addEventListener("click", (event) => {});
+
 function displayColors(palette) {
   //6. Créer des instances de Color
   const tabColor = [];
@@ -31,7 +35,7 @@ function displayColors(palette) {
   //Affichage du conatiner
   headerElement.classList.add("minimized");
   //Reset du container
-  document.querySelector("main").innerHTML = "";
+  mainElement.innerHTML = "";
   //Couleur du dégradé avec linear-gradient(palette[début], palette[milieu], palette[fin])$
   document.body.style.background = `linear-gradient(-45deg , #${tabColor[0].hex}, #${tabColor[5].hex}, #${tabColor[9].hex})`;
   document.body.style.backgroundSize = "400% 400%";
