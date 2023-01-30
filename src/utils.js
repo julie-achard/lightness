@@ -9,3 +9,7 @@ export function generatePalette(colorhex) {
   }
   return tabColor;
 }
+
+export function generateHexa(colorhsl) {
+  return convert.hsl.hex(colorhsl);
+}
