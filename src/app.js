@@ -45,3 +45,5 @@ function displayColors(palette) {
     changeHexToHsl(inputElement.value)
   );
 }
+
+//https://lightness.netlify.app/
